@@ -1,0 +1,49 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin: 10px 5px;
+}
+
+.first_grid {
+    background-color: tomato;
+}
+
+.second_grid {
+    background-color: palegoldenrod;
+}
+
+.third_grid {
+    background-color: olive;
+}
+
+.fourth_grid {
+    background-color: greenyellow;
+}
+
+.fifth_grid {
+    background-color: darkorange;
+}
+
+.sixth_grid {
+    background-color: violet;
+}
+
+.seventh_grid {
+    background-color: saddlebrown;
+}
+
+.eight_grid {
+    background-color: magenta;
+}
+
+.ninth_grid {
+    background-color: black;
+}
