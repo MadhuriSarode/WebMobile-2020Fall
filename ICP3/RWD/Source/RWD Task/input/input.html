@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<!--
+TODO:
+1.Enter your name in h1 and designation in h3
+2.Replace all the placeholder images with suitable images of the same size reflecting you and your projects.Feel free to use the sample images provided
+3.Replace the content of headings App1,App2,App3,App4 with suitable headings of your projects & provide their github links in the corresponding links
+4.Make all the elements in the page responsive & align its content as shown in the output sample with the aforementioned using bootstrap
+
+-->
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">    <title>ICP3-Madhuri Sarode</title>
+  <!--  ADD THE BOOTSTRAP CSS style sheet available from project given in class plan-->
+    <!-- CSS only -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+
+<!--Setting Style and color of the 2 boxes on the left hand side of the page  -->
+
+   <style>
+       #color1 {
+           height: 50px;
+           width: 50%;
+           background-color: #bcbbbb;
+       }
+
+       #color2 {
+           height: 50px;
+           width: 50%;
+           background-color: #747704;
+       }
+   </style>
+   <body>
+   <div class="container-fluid" style="background-color: white">    <!-- -->
+       <br><br>    <!-- Line breaker -->
+    <div class="col-sm-2 sidenav">  <!--2 columns, left sidebar -->
+    </div>                           <!--The two columns of space and media appear side by side -->
+    <div class="col">           <!-- Auto-layout filling the rest of the bar for 10 columns-->
+        <div class="media">
+            <div class="media-left">     <!--.media-left class to align the media object (image) to the left" -->
+                <img src="PlaceHolderImages/Madhuri.jpg" class="media-object" style="width:100px;height: 100px;"/>
+            </div>
+            <div class="media-body">        <!--Text that should appear next to the image, is placed inside a container with class="media-body" -->
+                <h1 class="media-heading" align="right" style="font-family: Lato; color: grey">Madhuri Sarode</h1>
+                <h3 align="right" style="font-family: Lato; color: grey">UMKC Graduate Student</h3>
+            </div>
+            <hr>                <!-- Horizontal row line separating the previously mentioned media and content from the rest following-->
+        </div>
+    </div>
+
+    <div class="col-sm-2" style="font-family: Lato">        <!--2 columns of the side bar of the row" -->
+        <div class="row">                                   <!--In this row we define "for reference conly and 2 grey blocks -->
+            <div class="col-sm-2">
+                <p style="color:maroon">F o r</p>            <!--Even tough the word "For" is defined in one line, it appears as verticle because of text wrapping, since there is only space for 2 columns-->
+                <p style="color:maroon">R e f e r e n c e</p>
+                <p style="color:maroon">o n l y</p>
+            </div>
+            <div class="col-sm-10">
+                <p id="color1" ></p>  <!--Color style the first box for the color bcbbbb -->
+                <p id="color2" ></p>  <!--Color style the second box for the color 747704 -->
+                <p>BCBBBB</p>
+                <p>747704</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-10" style="font-family: Lato">        <!--The remaining 10 columns of the side bar of the row from the above -->
+        <div>                                                <!--This makes the 2 contents appear next to each other  -->
+            <img src="../SampleImages/Image.png" width="1140px" height="350px">  <!-- Displaying image in 10 coloumns left from the previous row where "for reference only" is printed -->
+        </div>
+        <div>
+            <br><p style="font-size:30px; font-family: Lato">Featured Work</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4" >          <!-- using 4 colomns of the space for first image at bottom of page-->
+                <div class="thumbnail">     <!-- Bootstrap image spae chosen -->
+                    <a href="https://github.com/MadhuriSarode/WebMobile-2020Fall/wiki/Web-ICP3-(-Bootstrap,-JavaScript)" target="_blank">
+                        <img src="../SampleImages/app1.png" alt="APPIFY" style="width:555px; height: 250px;">
+                        <div class="caption">
+                            <p>APPIFY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4" >           <!-- Using next 4 colomns of the space for second image at bottom of page-->
+                <div class="thumbnail">
+                    <a href="https://en.wikipedia.org/wiki/Helianthus"
+                       target="_blank">     <!-- Opening the given link in a new tab  -->
+                        <img src="../SampleImages/app2.png" alt="Sunflower" style="width:555px; height: 250px;">
+                        <div class="caption">
+                            <p>Sunflower</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4" >       <!-- using last 4 colomns of 12 colomns the space for third image at bottom of page -->
+                <div class="thumbnail">
+                    <a href="https://en.wikipedia.org/wiki/Flower_bouquet#/media/File:Onam_Flower_Arrangement.jpg" target="_blank">
+                        <img src="../SampleImages/app3.png" alt="BOKEH" style="width:555px; height: 250px;">
+                        <div class="caption">
+                            <p>BOKEH</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
