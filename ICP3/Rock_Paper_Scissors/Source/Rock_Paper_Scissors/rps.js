@@ -18,12 +18,11 @@ const scissor_div = document.getElementById("scissors");
 function getcomputerchoice() {
     const choices = ["rock", "paper", "scissors"];
     // Math.floor is used for whole numbers Math.random is used to show random numbers between 0 and 1
-    //It is multiplied by 3 to get a number between 1 and 3.
+    //It is multiplied by 3 to get a number between 0 and 2.
     const randomnumber = Math.floor(Math.random() * 3);
     //From the list of choices, we select one present in index number as randomnumber
-    return choices[randomnumber]; // r = 0 , p =  1 ,
+    return choices[randomnumber]; // rock = 0 , paper =  1 , scissors = 2
 }
-
 /**
  * Check if the user wins according to their choices
  * @param userchoice
