@@ -1,0 +1,180 @@
+
+header {
+  padding: 20px;
+  background-color: lavenderblush;
+}
+
+header> h1
+{
+  color: darkmagenta;
+  text-align: center;
+  font-family: "Cooper Black";
+}
+
+body {
+  background-color: plum;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  text-align: center;
+  border: 2px solid yellow;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
+
+.center {
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+
+}
+
+.scoreboard
+{
+  border: 3px olive;
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+  padding: 2px 2px;
+  font-family: "Cooper Black";
+  position: relative;
+}
+
+.badge{
+  background: darkmagenta;
+  color: white;
+  font-size: initial;
+  padding: 5px 5px;
+}
+
+.result{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Cooper Black";
+}
+
+.choices{
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.choice{
+  display: inline-block;
+  margin: 0px 60px;
+  padding: 0px;
+}
+
+.choices>.choice > img {
+  height: 100px;
+  width: 100px;
+}
+.choice:hover{
+  cursor: pointer;
+  background: fuchsia;
+}
+body> p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: "Cooper Black";
+}
+
+p {
+  animation-duration: 2s;
+  animation-name: drop;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 200%;
+    margin-left: 25%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+p2 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {background-color:pink; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:lightblue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:lightseagreen; left:0px; top:0px;}
+}
+
+p4{
+  list-style-type: none;
+  float: left;
+  margin-right: 25px;
+  color: #262626;
+  background-color: hsl(58,100%,50%);
+  padding: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Times;
+  display: table-cell;
+  animation:drop 2s  ease-in-out;
+  border-radius: 100%;
+
+}
+
+
+
+@keyframes drop{
+  0%{transform: translateY(-350px);}
+  20%{transform: translateY(50px);}
+  40%{transform: translateY(-50px);
+    background-color:magenta;
+    color: white;
+    box-shadow: inset 0px -1px 80px #f03;}
+  60%{transform: translateY(20px);}
+  80%{transform: translateY(-20px);
+    background-color:magenta;
+    color: white;
+    box-shadow: inset 0px -1px 5px #003;}
+  100%{transform: translateY(0px);
+  }
+
+}
+
+
+li:nth-child(1){
+  animation-delay: 0s;
+}
+li:nth-child(2){
+  animation-delay: .4s;
+}
+li:nth-child(3){
+  animation-delay: .8s;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Rock paper Scissors game !-->
+<head>
+  <meta charset="UTF-8">
+  <title>rock paper scissor</title>
+  <link href="index.css" type="text/css" rel="stylesheet">  <!-- link to css stylesheet !-->
+
+</head>
+<body>
+<header>
+  <h1><p2>Rock-Paper-Scissors</p2></h1>   <!-- Header along with its animation !-->
+  <h2><p4>Lets play my friend</p4></h2>
+  <div id="logo" class="center">
+    <img src="Images/Logo.png"  alt="">   <!-- Rock paper Scissors logo from images !-->
+  </div>
+</header>
+
+<!-- Score board for user and computer !-->
+<div class="flex-container">
+
+  <div class="flex-child magenta">
+    <div class="badge">User</div>
+    <span id="user-score" style="font-size: 30px" >0</span>
+    <p7 style="font-size:50px">&#128103;</p7>       <!-- User emoji !-->
+  </div>
+
+  <div class="flex-child green">
+    <div class="badge">Computer</div>
+    <span id="computer-score" style="font-size: 30px" >0</span>
+    <p7 style="font-size:50px">&#128187;</p7>       <!-- Computer emoji !-->
+  </div>
+
+</div>
+
+<!-- The result of the each game is displayed here in tihs tag !-->
+<div class="result">
+  <p>Start the match : Select one choice</p>
+</div>
+
+<!-- The choices the user can make while playing and the following are the buttons !-->
+<div class="choices">
+  <div class="choice" id="rock">
+    <img src="Images/rock.jpeg" alt="">
+  </div>
+  <div class="choice" id="paper">
+    <img src="Images/Paper.jpeg" alt="">
+  </div>
+  <div class="choice" id="scissors">
+    <img src="Images/Sicssors.jpeg" alt="">
+  </div>
+</div>
+<script src="rps.js"></script>          <!-- Invokes the java script !-->
+<! -- link to javascripts !-->
+
+</body>
+</html>
