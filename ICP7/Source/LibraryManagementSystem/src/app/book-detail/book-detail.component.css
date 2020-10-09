@@ -1,0 +1,16 @@
+.example-card {
+  max-width: 500px;
+}
+
+.button-row {
+  margin: 10px 0;
+}
+
+.mat-raised-button {
+  transition-duration: 0.4s;
+}
+
+.mat-raised-button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
