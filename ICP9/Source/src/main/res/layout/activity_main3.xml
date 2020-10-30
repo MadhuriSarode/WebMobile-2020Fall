@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/Items_in_cart"
+        android:layout_width="310dp"
+        android:layout_height="172dp"
+        android:textColor="#7B1FA2"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/billingview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Your Pizza looks like this !!!"
+        android:textColor="#512DA8"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/billingview"
+        android:layout_width="265dp"
+        android:layout_height="263dp"
+        android:layout_marginBottom="104dp"
+        android:textColor="#7B1FA2"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <Button
+        android:id="@+id/Pay"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:background="#0288D1"
+        android:onClick="PayTheBill"
+        android:text="Pay"
+        android:textColor="#622DC5"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billingview"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="205dp"
+        android:layout_height="30dp"
+        android:background="#B3E488"
+        android:text="TotalPrice="
+        android:textColor="#C2185B"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toTopOf="@+id/Pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billingview"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <CheckBox
+        android:id="@+id/addtip"
+        android:layout_width="56dp"
+        android:layout_height="33dp"
+        android:onClick="addTip"
+        android:text="15%"
+        app:layout_constraintBottom_toTopOf="@+id/Pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toEndOf="@+id/Total"
+        app:layout_constraintTop_toBottomOf="@+id/billingview"
+        app:layout_constraintVertical_bias="0.479" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="103dp"
+        android:layout_height="33dp"
+        android:onClick="addTipCustom"
+        android:text="Custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/addtip"
+        app:layout_constraintTop_toBottomOf="@+id/billingview"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <EditText
+        android:id="@+id/customTip"
+        android:layout_width="74dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Tip $"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:text="Order"
+        android:textColor="#7B1FA2"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/Items_in_cart"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:text="Bill"
+        android:textColor="#7B1FA2"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/Total"
+        app:layout_constraintEnd_toStartOf="@+id/billingview"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
